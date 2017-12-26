@@ -1,0 +1,353 @@
+#classWrap{
+  width: 100%;
+  background: rgb(248,248,248);
+}
+#classWrap .classif1{
+  width: 240px;
+  height: 85px;
+  font-size: 20px;
+  line-height: 85px;
+  margin-left: 75px;
+  font-weight: bold;
+}
+#classWrap .classif1 span{
+  display: inline-block;
+  margin-left: 9px;
+}
+#classWrap .classif1 span:nth-of-type(2){
+  color: rgb(251,78,85);
+}
+#list1{
+  width: 1200px;
+  height: 50px;
+  background: white;
+  margin: 10px auto;
+}
+#list1 ul li{
+  float: left;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 0 10px;
+}
+#list1 ul li:nth-of-type(1){
+  margin: 0 30px;
+  color:  silver;
+  font-size: 18px;
+}
+#list1 ul li:nth-of-type(2):hover{
+  color: red;
+}
+
+#list1 ul .hred{
+  color: red;
+}
+#list1 ul .classred:hover{
+  color: red;
+}
+
+#classMain{
+  width: 960px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 75px;
+  background-color: white;
+  line-height: 60px;
+  border: 1px solid #eaeaea;
+  font-weight: normal;
+  font-size: 14px;
+  overflow: hidden;
+}
+#classMain h3 span i{ font-style:normal}
+
+#classMain h3 .paihang{
+  font-size: 16px;
+}
+#classMain h3 .paihang i{
+  display: inline-block;
+  height: 39px;
+  line-height: 39px;
+  margin-right: 45px;
+}
+#classMain h3 .paihang i:hover{
+  cursor: pointer;
+}
+#classMain h3 .paihang .activity{
+  border-bottom:4px red solid;
+}
+#classMain h3 .paihang i:nth-of-type(1){
+  margin-left: 20px;
+}
+#classMain h3 .spnright{
+  float: right;
+  color: #121212;
+  margin-right: 15px;
+}
+
+
+#classMain h3 .spnright i:nth-of-type(3){
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border:1px silver solid;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#classMain h3 .spnright i:nth-of-type(4){
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border:1px silver solid;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#classUl{
+  width: 960px;
+  margin-left: 75px;
+  background-color: white;
+}
+#classUl li{
+  height: 220px;
+  border-bottom: 1px silver solid;
+}
+#classUl li:hover{
+  background-color: silver;
+}
+#classUl li .ctop{
+  position: relative;
+}
+#classUl li .ctop>img{
+  width: 140px;
+  height: 140px;
+  margin: 30px;
+}
+#classUl li .ctop .spm{
+  display: inline-block;
+  width: 404px;
+  height: 168px;
+  position: absolute;
+  top: 35px;
+
+}
+.spm i:nth-child(1) {
+  font-size: 18px;
+  color: #1d1515;
+  font-style:normal
+
+}
+.spm i:nth-child(2){
+  display: block;
+  line-height: 42px;
+  height: 42px;
+  font-style:normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.spm i:nth-child(3){
+  display: inline-block;
+  width: 351px;
+  height: 42px;
+  font-style:normal;
+}
+.spm i:nth-child(3) b:nth-of-type(1){
+  width: 72px;
+  height: 26px;
+  font-size: 20px;
+  color: red;
+
+}
+.spm i:nth-child(3) b:nth-of-type(1) em{
+  font-style:normal;
+  font-size: 14px;
+  color: red;
+}
+#classUl li .ctop .spm i.oldpic{
+  overflow: hidden;
+}
+#classUl li .ctop .spm i:nth-child(4){
+  /*display: block;*/
+  width: 351px;
+  height: 42px;
+  font-size: 14px;
+  color: #1d1515;
+}
+#classUl li .ctop .spm span{
+  position: absolute;
+  top:120px;
+  left: 0;
+  width: 404px;
+  height: 42px;
+}
+#classUl li .ctop .spm span img{
+  width: 18px;
+  height: 17px;
+  vertical-align: middle;
+}
+#classUl li .ctop .spm span b{
+  font-weight: normal;
+  color: #929292;
+  font-size: 14px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+#classUl li .ctop .spm span b em{
+  font-style: normal;
+}
+#classUl li .ctop .spf{
+  position: absolute;
+  top:30px;
+  left: 850px;
+  display: inline-block;
+  width: 62px;
+  height: 32px;
+  border: 1px red solid;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#classUl li .ctop .spf i{
+  display: inline-block;
+  width: 62px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  font-style: normal;
+  font-size: 14px;
+}
+#classUl li .ctop .spf i:nth-of-type(1){
+  background-color: red;
+  border-top: 2px red solid;
+}
+#classUl li .ctop .spf i:nth-of-type(2){
+
+  color: red;
+}
+#classLi{
+  width: 228px;
+  position: absolute;
+  top: 235px;
+  left: 1045px;
+  border-bottom: 1px silver solid;
+}
+#classLi h3{
+  width: 258px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px silver solid;
+  line-height: 60px;
+}
+#classLi .classLip{
+  width: 100%;
+  height: 200px;
+  border-left: 1px silver solid;
+  border-right: 1px silver solid;
+  padding-left: 30px;
+}
+#classLi .classLip img{
+  width: 70px;
+  height: 70px;
+  margin: 30px 50px;
+
+}
+#classLi .classLip p{
+  margin: 0 auto;
+}
+#classLi .classLip p:nth-of-type(1){
+  width: 228px;
+  height: 36px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  left:1px;
+}
+#classLi .classLip p:nth-of-type(2){
+  width: 206px;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  top: 20px;
+  left: -15px;
+  border-bottom: 1px silver solid;
+}
+#classLi .classLip p:nth-of-type(2) span{
+  font-size: 14px;
+  color: silver;
+}
+#classLi .classLip span{
+  font-size: 14px;
+  color: silver;
+}
+
+#fenye2{
+  position: relative;
+  width: 960px;
+  height: 152px;
+  background: rgb(248,248,248);
+  /*border:1px solid;*/
+  margin-left: 75px;
+  position: relative;
+}
+#classLi h3{
+  background-color: white;
+}
+#classLi .classLip{
+  background-color: white;
+}
+#classLi .classLip:hover{
+  background-color: silver;
+  cursor: pointer;
+}
+
+#fenye2 .pageup{
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  color: silver;
+  line-height: 30px;
+  background: white;
+  text-align: center;
+  float: left;
+
+}
+#fenye2 .pagedown{
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  color: silver;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+  background: white;
+}
+#fenye2 .fenye3 a{
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  background: white;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+}
+#fenye2 .fenye4{
+
+  position: relative;
+  height: 30px;
+  margin: 50px auto 0px;
+  display: flex;
+  justify-content:center;
+}
+#fenye2 .fenye4 .fenye3{
+  float: left;
+  margin: 0 15px;
+}
+#fenye2 .fenye4 .fenye3 a{
+  margin: 0 5px;
+}

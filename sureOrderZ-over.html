@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+<form  id="sureForm" action="">
+    <div id="suOZheader">
+        <span>我的桌号</span>
+        <span>1</span>
+    </div>
+    <div id="suFoList1">
+        <ul class="suFoList1-xq">
+            <li>订单详细</li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <li class="clearfix foodMenu">
+                <span>血腥玛丽(Bloody Mary)</span>
+                <span class="suFoList1-xqs">￥130.00</span>
+                <span class="suFoList1-xqs">x2</span>
+            </li>
+            <!--<li class="clearfix foodMenu">-->
+                <!--<span>血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="suFoList1-xqs">￥130.00</span>-->
+                <!--<span class="suFoList1-xqs">x2</span>-->
+            <!--</li>-->
+            <!--<li class="clearfix foodMenu">-->
+                <!--<span>血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="suFoList1-xqs">￥130.00</span>-->
+                <!--<span class="suFoList1-xqs">x2</span>-->
+            <!--</li>-->
+            <!--<li class="clearfix foodMenu">-->
+                <!--<span>血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="suFoList1-xqs">￥130.00</span>-->
+                <!--<span class="suFoList1-xqs">x2</span>-->
+            <!--</li>-->
+            <!--<li class="clearfix foodMenu">-->
+                <!--<span>血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="suFoList1-xqs">￥130.00</span>-->
+                <!--<span class="suFoList1-xqs">x2</span>-->
+            <!--</li>-->
+
+
+
+
+        </ul>
+        <ul class="suFoList1-xqx">
+            <li>
+                积分可用400抵用￥40
+                <div id="jBtn" class="jBtnColor">
+                    <span id="btnAn" ></span>
+                </div>
+            </li>
+            <li>
+                <span>优惠券</span>
+                <a href="javascript:;">
+                    <span>无可用</span>
+                    <span></span>
+                </a>
+
+            </li>
+            <li>
+                <span>实付(共两件商品)</span>
+                <span>￥90.00</span>
+            </li>
+
+        </ul>
+        <div class="suDiv">
+            <span>备注</span>
+            <input type="text" placeholder="可输入备注内容，包括口味偏好等。">
+        </div>
+
+
+
+
+    </div>
+
+    <input type="submit" value="支付￥130.00" id="suPlayBtn">
+</form>
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+        $(".payCz").on("tap",function () {
+            if($(this).val()=="pwx"){
+                $(".vipCx").removeClass("vipCxX")
+                $(".vipCq").removeClass("vipCxQ")
+                $(".vipCw").toggleClass("vipCxW")
+            }else if($(this).val()=="pxx"){
+                $(".vipCw").removeClass("vipCxW")
+                $(".vipCq").removeClass("vipCxQ")
+                $(".vipCx").toggleClass("vipCxX")
+            }else if($(this).val()=="pqb"){
+                $(".vipCx").removeClass("vipCxX")
+                $(".vipCw").removeClass("vipCxW")
+                $(".vipCq").toggleClass("vipCxQ")
+            }
+
+
+        })
+
+        $("#btnAn").on("tap",function () {
+            $("#jBtn").toggleClass("jBtnColor1")
+            $("#jBtn").toggleClass("jBtnColor")
+            $(this).toggleClass("btnAn1")
+
+        })
+
+
+
+
+    })
+
+</script>
+</html>

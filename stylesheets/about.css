@@ -1,0 +1,49 @@
+#about1{
+  width: 100%;
+  height: 240px;
+  background-image: url("../images/aboutbanner.jpg");
+  background-position: center;
+
+}
+#about2{
+  width: 100%;
+  /*height: 850px;*/
+  background: rgb(248,248,248);
+  /*margin-top: -20px;*/
+  border-bottom: 1px silver solid;
+
+}
+#about3{
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  top:20px;
+}
+
+#about3 h3{
+  border-bottom: 4px solid #e84b47;
+  width: 96px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#about3 p{
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #929292;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+#about3 .about3_1 p:last-child{
+  border-bottom: 1px silver solid;
+}
+#about3 .about3_2 p:last-child{
+  border-bottom: 1px silver solid;
+}

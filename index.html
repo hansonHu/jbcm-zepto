@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CM CLUB</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4dbc1402f4/UntitledProject/style.css">
+</head>
+<body>
+<div id="indexImg">
+    <img src="./img/indexBig.png">
+    <span>CM CLUB</span>
+</div>
+<div id="indexNav">
+    <ul id="inList">
+        <li class="inProduct">
+            <a href="javascript:;">
+                <img src="./img/chanpin.png">
+                <span>产品</span>
+            </a>
+        </li>
+        <li class="inPend">
+            <a href="javascript:;">
+                <img src="./img/dingzuo.png">
+                <span>订座</span>
+            </a>
+        </li>
+        <li class="inPlay">
+            <a href="javascript:;">
+                <img src="./img/youxi.png">
+                <span>游戏</span>
+            </a>
+        </li>
+    </ul>
+    <div id="headImg"></div>
+</div>
+<div id="indexCenter">
+    <div id="indexTime">
+        <div class="timeOpen">
+            <img src="./img/time.png"><span>营业时间：19:00-02.00</span>
+        </div>
+        <div class="indexWifi">
+            <img src="./img/Wi-Fi.png"><span>Wi-Fi名称:xxxxxx</span>
+        </div>
+
+        <span class="indexLe"></span>
+        <a href="javascript:;" class="indexPhone"></a>
+    </div>
+    <div id="indeMap">
+        <a href="javascript:;">
+            <img src="./img/dizhi.png">
+            <span>珠江路1912街区</span>
+            <img src="./img/xuanze.png">
+        </a>
+    </div>
+</div>
+<div id="indexCaiDan">
+    <div>
+        <img src="./img/SingleMaitWhisky.png">
+        <span>单杯威士忌</span>
+        <span>Single whisky</span>
+    </div>
+    <div>
+        <img src="./img/SingleMaitWhisky.png">
+        <span>单杯威士忌</span>
+        <span>Single whisky</span>
+    </div>
+    <div>
+        <img src="./img/SingleMaitWhisky.png">
+        <span>单杯威士忌</span>
+        <span>Single whisky</span>
+    </div>
+    <div>
+        <img src="./img/SingleMaitWhisky.png">
+        <span>单杯威士忌</span>
+        <span>Single whisky</span>
+    </div>
+
+
+</div>
+<div id="footer">
+    <ul class="footerList clearfix">
+        <li>
+            <a href="javascript:;"class="changeCr">
+                <div class="changBg1"></div>
+                <span class="footerspan ">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">优惠</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">订单</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">我的</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+        //footer的逻辑
+        $(".footerList a").on("tap",function () {
+            $("div").removeClass("changBg1")
+            $(this).children("div").toggleClass("changBg1")
+            $("a").removeClass("changeCr")
+            $(this).toggleClass("changeCr")
+
+        })
+    })
+
+</script>
+</html>

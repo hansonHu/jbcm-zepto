@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的预定</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+
+
+</head>
+<body>
+<div id="integNav">
+    <ul class="clearfix">
+        <li><a href="javascript:;" class="integNavActive" orderid="order" class="userName">订座</a></li>
+        <span></span>
+        <li><a href="javascript:;" orderid="history">订座历史</a></li>
+    </ul>
+</div>
+<!--订单详情-->
+
+
+<!--订座-->
+<form  id="ddForm" action="">
+    <ul>
+        <li>姓名
+            <input type="text" placeholder="订座人姓名" class="userName">
+        </li>
+
+        <li class="ddForm1">人数 <input type="text" placeholder="请选择就餐人数" class="userNumber"></li>
+        <li class="ddForm2">时间
+            <input type="text" placeholder="请选择就餐时间" id="test1" class="layui-form-label" lay-key="6"readonly>
+
+        </li>
+        <li class="ddForm3">手机号 <input type="text" placeholder="请输入手机号" class="userPhone"></li>
+    </ul>
+    <div class="clearfix">备注<input type="text" placeholder="可输入备注内容，包括口味偏好等" class="beiZhu"></div>
+    <input type="submit" class="tiJiao" value="立即订座">
+</form>
+
+
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"> </script>
+<script   src="./js/laydate.js"></script>
+
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+
+        $(".userNumber").bind("tap",function () {
+            $(this).focus()
+        })
+        $(".userName").bind("tap",function () {
+            $(this).focus()
+        })
+        $(".userPhone").bind("tap",function () {
+            $(this).focus()
+        })
+        $(".beiZhu").bind("tap",function () {
+            $(this).focus()
+        })
+
+        $("form").submit(function (e) {
+            var nameMsg=/^\s*$/
+            var userName=$(".userName").val()
+            var numberMsg=/^\d+$/
+            var userNumber=$(".userNumber").val()
+            var phoneMsg=/^1(3|4|5|7|8)\d{9}$/
+            var userPhone=parseInt($(".userPhone").val())
+            var userBeiZhu=$(".beiZhu").val()
+            var beiMsg=/.*/
+            if(!nameMsg.test(userName)&&numberMsg.test(userNumber)&&phoneMsg.test(userPhone)&&beiMsg.test(userBeiZhu)){
+                console.log("验证成功")
+            }else{
+                alert("请输入正确的信息")
+                return  false
+            }
+
+        })
+
+
+
+
+        laydate.render({
+            elem: '#test1' //指定元素
+            ,type: 'datetime',
+            position:"abolute"
+        });
+
+
+
+
+    })
+
+</script>
+</html>

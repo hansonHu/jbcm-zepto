@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>优惠</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4dbc1402f4/UntitledProject/style.css">
+</head>
+<body>
+<div id="youHuiYe">
+    <div id="youHuiImg"></div>
+</div>
+<div id="youHuiYe1">
+    <div id="youHuiYe2">
+        <div class="closeYouHuiYe"></div>
+        <span>优惠券</span>
+        <div class="youHuiYeDan">
+                <ul class="youHuiYeDan1">
+                    <li>￥</li>
+                    <li>20000</li>
+                    <li></li>
+                    <li>首次下单</li>
+                </ul>
+                <ul class="youHuiYeDan2">
+                    <li>减50元</li>
+                    <li>2017.11.11-2017.12.12</li>
+                </ul>
+                <span class="youHuiYeDan3">仅限会员首次下单使用</span>
+
+
+        </div>
+        <span class="youHuiYeDan4"></span>
+        <span class="youHuiYeDan5"></span>
+    </div>
+
+</div>
+<div id="youHuiYe3">
+    <img src="./img/fengxiang.png">
+    <span>如需分享，请点击右上角分享给好友</span>
+</div>
+<div id="footer">
+    <ul class="footerList clearfix">
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="changeCr">
+                <div class="changBg1"></div>
+                <span class="footerspan">优惠</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">订单</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">我的</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+
+
+    $("#youHuiImg").on("tap",function () {
+        $("#youHuiYe1").show()
+    })
+    $(".closeYouHuiYe").on("tap",function () {
+        $("#youHuiYe1").hide()
+    })
+
+   $(".youHuiYeDan4").on("tap",function () {
+       $(this).removeClass("youHuiYeDan4")
+       $(this).addClass("youHuiYeDan6")
+   })
+   $(".youHuiYeDan5").on("tap",function () {
+       $("#youHuiYe3").show()
+   })
+
+
+
+    })
+</script>
+</html>

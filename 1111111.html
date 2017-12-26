@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>商品分类</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body style="overflow:scroll;overflow-y:hidden">
+<div id="shopCarOut">
+    <!--头部-->
+    <div id="shopCarHeard">
+        <a href="javascript:;">
+            <img src="./img/home.png">
+        </a>
+        <a href="javascript:;">
+            <img src="./img/search.png">
+        </a>
+        <input type="text" placeholder="请输入关键字" class="shopMo" id="shopMo1">
+
+        <table>
+            <tbody>
+            <tr>
+                <td>1血腥玛丽(Bloody Mary)</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!--两个列表-->
+    <div id="shopCarList">
+        <!--品类列表-->
+        <ul id="goodList">
+            <li class="goodsA11">
+                <span>全部</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods1">
+                <span>鸡尾酒</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods2">
+                <span>优惠套餐</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods3">
+                <span>威士忌单杯</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods4">
+                <span>威士忌</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods5">
+                <span>生啤</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods6">
+                <span>零食</span>
+                <span class="goodFan"></span>
+            </li>
+        </ul>
+        <div class="foodListOut">
+            <ul id="foodList">
+                <li class="goods11 goods1all" data-id="a">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">1血腥玛丽(Bloody Mary)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">2</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods22 goods1all" data-id="b">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">2忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods33 goods1all" data-id="c">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">3忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods44 goods1all" data-id="d">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">4忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods55 goods1all" data-id="e">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">5忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods66 goods1all" data-id="f">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">6忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--购物车-->
+    <div id="shopCarB">
+        <img src="./img/gouwuche.png">
+        <span class="allNumber">0</span>
+        <span class="dollarFu">￥</span>
+        <span class="allPrice">0.00</span>
+        <button id="payShopCar">结算</button>
+    </div>
+    <!--小列表-->
+    <div id="smallListOut">
+        <div id="smallList">
+            <div class="smallListDiv">
+                <span class="smallTextShop">购物车</span>
+                <a href="javascript:;" class="closedSmallList">
+                    <img src="./img/shanchu.png">
+                    <span> 清空</span>
+                </a>
+            </div>
+            <ul class="smallListQin" id="smallListQin1">
+
+                <!--<li>-->
+                <!--<span class="smallFoodName">血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="smallFoodDollar">￥</span>-->
+                <!--<span class="smallFoodPrice">65.00</span>-->
+                <!--<span class="smallJian"></span>-->
+                <!--<span class="smallNum">1</span>-->
+                <!--<span class="smallJia"></span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="smallFoodName">血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="smallFoodDollar">￥</span>-->
+                <!--<span class="smallFoodPrice">65.00</span>-->
+                <!--<span class="smallJian"></span>-->
+                <!--<span class="smallNum">2</span>-->
+                <!--<span class="smallJia"></span>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+
+<script>
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    (function () {
+        var styleNode=document.createElement("style");
+        styleNode.innerHTML="html,bory{height:100%;}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+
+//      全局变量---------------------------------------------------------------------------
+//      单个商品数量
+        let arr1={}
+//      商品id
+        let arrName={};
+        //商品总数量
+        let allNumber=0;
+//        商品总价
+        let arrPrice=0;
+//        商品单价
+        let price1={};
+//      业务逻辑---------------------------------------------------------------------------
+        //左侧分类栏的点击逻辑
+        $("#goodList li").on("tap",function () {
+
+            $("#goodList li").css("color","#999")
+            $(".goodFan").css("display","none")
+            $(this).css("color","deeppink")
+            $(this).children(".goodFan").css("display","block")
+            switch ($(this)[0].className){
+                case "goodsA11":
+                    $(".goods1all").show()
+                    break;
+                case "goods1":
+                    $(".goods1all").hide()
+                    $(".goods11").show()
+                    break;
+                case "goods2":
+                    $(".goods1all").hide()
+                    $(".goods22").show()
+                    break;
+                case "goods3":
+                    $(".goods1all").hide()
+                    $(".goods33").show()
+                    break;
+                case "goods4":
+                    $(".goods1all").hide()
+                    $(".goods44").show()
+                    break;
+                case "goods5":
+                    $(".goods1all").hide()
+                    $(".goods55").show()
+                    break;
+                case "goods6":
+                    $(".goods1all").hide()
+                    $(".goods66").show()
+                    break;
+
+            }
+
+
+        });
+//GOODlist 逻辑----------------------------------------------------------------------------
+        //goods 大加号逻辑
+        $(".foodListBigJia").on("click",function () {
+            allNumber+=1
+            switch ($(this).parent().attr("data-id")){
+                case "a":
+                    if(!arr1.a){
+                        arr1.a=0
+                    }
+                    arr1.a +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.a)
+                    if(!arrName.a){
+                       arrName.a=""
+                    }
+                    arrName.a += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.a){
+                        price1.a=0
+                    }
+                    price1.a +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.a,arr1.a,price1.a,"a")
+                    $(".allNumber").text(allNumber);
+                    $(this).parent().addClass("a")
+                    break;
+                case "b":
+                    if(!arr1.b){
+                        arr1.b=0
+                    }
+                    arr1.b +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.b)
+                    if(!arrName.b){
+                        arrName.b=""
+                    }
+                    arrName.b += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.b){
+                        price1.b=0
+                    }
+                    price1.b +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.b,arr1.b,price1.b,"b")
+                    $(this).parent().addClass("b")
+                    $(".allNumber").text(allNumber);
+                    break;
+                case "c":
+                    if(!arr1.c){
+                        arr1.c=0
+                    }
+                    arr1.c +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.c)
+                    if(!arrName.c){
+                        arrName.c=""
+                    }
+                    arrName.c += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.c){
+                        price1.c=0
+                    }
+                    price1.c +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.c,arr1.c,price1.c,"c")
+                    $(this).parent().addClass("c")
+                    $(".allNumber").text(allNumber);
+                    break;
+                case "d":
+                    if(!arr1.d){
+                        arr1.d=0
+                    }
+                    arr1.d +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.d)
+                    if(!arrName.d){
+                        arrName.d=""
+                    }
+                    arrName.d += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.d){
+                        price1.d=0
+                    }
+                    price1.d +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.d,arr1.d,price1.d,"d")
+                    $(this).parent().addClass("d")
+                    $(".allNumber").text(allNumber);
+                    break;
+                case "e":
+                    if(!arr1.e){
+                        arr1.e=0
+                    }
+                    arr1.e +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.e)
+                    if(!arrName.e){
+                        arrName.e=""
+                    }
+                    arrName.e += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.e){
+                        price1.e=0
+                    }
+                    price1.e +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.e,arr1.e,price1.e,"e")
+                    $(this).parent().addClass("e")
+                    $(".allNumber").text(allNumber);
+                    break;
+                case "f":
+                    if(!arr1.f){
+                        arr1.f=0
+                    }
+                    arr1.f +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.f)
+                    if(!arrName.f){
+                        arrName.f=""
+                    }
+                    arrName.f += $(this).parent().children("a").children(".foodName").text()
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    if(!price1.f){
+                        price1.f=0
+                    }
+                    price1.f +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    createLi(arrName.f,arr1.f,price1.f,"f")
+                    $(this).parent().addClass("f")
+                    $(".allNumber").text(allNumber);
+                    break
+
+            }
+                console.log(arr1)
+            console.log(arrName)
+            $(".allPrice").text(arrPrice)
+            $(this).parent().children(".foodListJian").show()
+            $(this).parent().children(".foodListJia").show()
+            $(this).parent().children(".foodListNum").show()
+
+            $(this).hide()
+
+        });
+        //goods 小加号逻辑
+        $(".foodListJia").on("tap",function () {
+            allNumber+=1;
+            switch ($(this).parent().attr("data-id")){
+                case "a":
+                    if(!arr1.a){
+                        arr1.a=0
+                    }
+                    arr1.a +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.a);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".a").children(".smallNum").text(arr1.a);
+                    break;
+                case "b":
+                    if(!arr1.b){
+                        arr1.b=0
+                    }
+                    arr1.b +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.b);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".b").children(".smallNum").text(arr1.b);
+                    break;
+                case "c":
+                    if(!arr1.c){
+                        arr1.c=0
+                    }
+                    arr1.c +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.c);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".c").children(".smallNum").text(arr1.c);
+                    break;
+                case "d":
+                    if(!arr1.d){
+                        arr1.d=0
+                    }
+                    arr1.d +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.d);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".d").children(".smallNum").text(arr1.d);
+                    break;
+                case "e":
+                    if(!arr1.e){
+                        arr1.e=0
+                    }
+                    arr1.e +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.e);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".e").children(".smallNum").text(arr1.e);
+                    break;
+                case "f":
+                    if(!arr1.f){
+                        arr1.f=0
+                    }
+                    arr1.f +=1;
+                    $(this).parent().children(".foodListNum").text(arr1.f);
+                    arrPrice +=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text());
+                    $(".f").children(".smallNum").text(arr1.f);
+                    break
+            }
+
+            console.log(arr1);
+            $(".allPrice").text(arrPrice);
+            $(".allNumber").text(allNumber);
+
+        });
+        //goods 减号逻辑
+        $(".foodListJian").on("tap",function () {
+            allNumber-=1
+            switch ($(this).parent().attr("data-id")){
+                case "a":
+                    arr1.a -=1
+                    if(arr1.a<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.a)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break;
+                case "b":
+                    arr1.b -=1
+                    if(arr1.b<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.b)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break;
+                case "c":
+                    arr1.c -=1
+                    if(arr1.c<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.c)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break;
+                case "d":
+                    arr1.d -=1
+                    if(arr1.d<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.d)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break
+                case "e":
+                    arr1.e -=1
+                    if(arr1.e<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.e)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break
+                case "f":
+                    arr1.f -=1
+                    if(arr1.f<=0){
+                        $(this).parent().children(".foodListJian").hide();
+                        $(this).parent().children(".foodListNum").hide();
+                        $(this).parent().children(".foodListJia").hide();
+                        $(this).parent().children(".foodListBigJia").show();
+                    }else{
+                        $(this).parent().children(".foodListNum").text(arr1.f)
+                    }
+                    arrPrice -=parseFloat($(this).parent().children("a").children(".foodPrice").children(".foodPrice1").text())
+                    break
+            }
+
+            console.log(arr1)
+            if(allNumber<=0){
+                allNumber=0
+            }
+            if(arrPrice<=0){
+                arrPrice=0
+            }
+
+            $(".allPrice").text(arrPrice)
+            $(".allNumber").text(allNumber)
+        });
+        //smallList加号逻辑
+        $(document).on("tap",".smallJia",function () {
+            allNumber+=1
+            switch ($(this).parent().attr("data-id")){
+                case "a":
+                    arr1.a +=1;
+                    $(this).parent().children(".smallNum").text(arr1.a);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".a").children(".foodListNum").text(arr1.a);
+                    break;
+                case "b":
+                    arr1.b +=1;
+                    $(this).parent().children(".smallNum").text(arr1.b);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".b").children(".foodListNum").text(arr1.b);
+                    break;
+                case "c":
+                    arr1.c +=1;
+                    $(this).parent().children(".smallNum").text(arr1.c);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".c").children(".foodListNum").text(arr1.c);
+                    break;
+                case "d":
+                    arr1.d +=1;
+                    $(this).parent().children(".smallNum").text(arr1.d);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".d").children(".foodListNum").text(arr1.d);
+                    break;
+                case "e":
+                    arr1.e +=1;
+                    $(this).parent().children(".smallNum").text(arr1.e);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".e").children(".foodListNum").text(arr1.e);
+                    break;
+                case "f":
+                    arr1.f +=1;
+                    $(this).parent().children(".smallNum").text(arr1.f);
+                    arrPrice +=parseFloat($(this).parent().children(".smallFoodPrice").text());
+                    $("#foodList").children(".f").children(".foodListNum").text(arr1.f);
+                    break
+            }
+
+            console.log(arr1)
+            $(".allPrice").text(arrPrice)
+            $(".allNumber").text(allNumber)
+
+
+
+        });
+        //smallList减号
+        $(document).on("tap",".smallJian",function () {
+            console.log(11)
+            allNumber-=1
+            switch ($(this).parent().attr("data-id")){
+                case "a":
+                    arr1.a -=1
+                    if(arr1.a<=0){
+                    $(this).parent().remove()
+                        arr1.a=0
+                        $("#foodList").children(".a").children(".foodListNum").hide()
+                        $("#foodList").children(".a").children(".foodListJia").hide()
+                        $("#foodList").children(".a").children(".foodListJian").hide()
+                        $("#foodList").children(".a").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.a)
+                    $("#foodList").children(".a").children(".foodListNum").text(arr1.a)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break;
+                case "b":
+                    arr1.b -=1
+                    if(arr1.b<=0){
+                        $(this).parent().remove()
+                        arr1.b=0
+                        $("#foodList").children(".b").children(".foodListNum").hide()
+                        $("#foodList").children(".b").children(".foodListJia").hide()
+                        $("#foodList").children(".b").children(".foodListJian").hide()
+                        $("#foodList").children(".b").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.b)
+                    $("#foodList").children(".b").children(".foodListNum").text(arr1.b)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break;
+                case "c":
+                    arr1.c -=1
+                    if(arr1.c<=0){
+                        $(this).parent().remove()
+                        arr1.c=0
+                        $("#foodList").children(".c").children(".foodListNum").hide()
+                        $("#foodList").children(".c").children(".foodListJia").hide()
+                        $("#foodList").children(".c").children(".foodListJian").hide()
+                        $("#foodList").children(".c").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.c)
+                    $("#foodList").children(".c").children(".foodListNum").text(arr1.c)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break;
+                case "d":
+                    arr1.d -=1
+                    if(arr1.d<=0){
+                        $(this).parent().remove()
+                        arr1.d=0
+                        $("#foodList").children(".d").children(".foodListNum").hide()
+                        $("#foodList").children(".d").children(".foodListJia").hide()
+                        $("#foodList").children(".d").children(".foodListJian").hide()
+                        $("#foodList").children(".d").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.d)
+                    $("#foodList").children(".d").children(".foodListNum").text(arr1.d)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break
+                case "e":
+                    arr1.e -=1
+                    if(arr1.e<=0){
+                        $(this).parent().remove()
+                        arr1.e=0
+                        $("#foodList").children(".e").children(".foodListNum").hide()
+                        $("#foodList").children(".e").children(".foodListJia").hide()
+                        $("#foodList").children(".e").children(".foodListJian").hide()
+                        $("#foodList").children(".e").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.e)
+                    $("#foodList").children(".e").children(".foodListNum").text(arr1.e)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break
+                case "f":
+                    arr1.f -=1
+                    if(arr1.f<=0){
+                        $(this).parent().remove()
+                        arr1.f=0
+                        $("#foodList").children(".f").children(".foodListNum").hide()
+                        $("#foodList").children(".f").children(".foodListJia").hide()
+                        $("#foodList").children(".f").children(".foodListJian").hide()
+                        $("#foodList").children(".f").children(".foodListBigJia").show()
+
+                        if(allNumber==0){
+                            $("#smallListOut").hide()
+                        }
+                    }
+                    $(this).parent().children(".smallNum").text(arr1.f)
+                    $("#foodList").children(".f").children(".foodListNum").text(arr1.f)
+                    arrPrice -=parseFloat($(this).parent().children(".smallFoodPrice").text())
+                    break
+            }
+
+            console.log(arr1)
+            if(allNumber<=0){
+                allNumber=0
+            }
+            if(arrPrice<=0){
+                arrPrice=0
+            }
+
+            $(".allPrice").text(arrPrice)
+            $(".allNumber").text(allNumber)
+
+        });
+        //创建购物车列表
+        function createLi(name,num,price,id) {
+            console.log(name,num,price)
+            var li=document.createElement("li")
+            li.setAttribute("data-id",id)
+            li.className=id
+            var smallFoodName=document.createElement("span")
+            smallFoodName.className="smallFoodName"
+            smallFoodName.innerHTML=name
+           li.appendChild(smallFoodName)
+            var smallFoodDollar=document.createElement("span")
+            smallFoodDollar.className="smallFoodDollar"
+            smallFoodDollar.innerHTML="￥"
+            li.appendChild(smallFoodDollar)
+            var smallFoodPrice=document.createElement("span")
+            smallFoodPrice.className="smallFoodPrice"
+            li.appendChild(smallFoodPrice)
+            smallFoodPrice.innerHTML=price
+            var smallJian=document.createElement("span")
+            smallJian.className="smallJian"
+            li.appendChild(smallJian)
+            var smallNum=document.createElement("span")
+            smallNum.className="smallNum"
+            smallNum.innerHTML=num
+            li.appendChild(smallNum)
+            var smallJia=document.createElement("span")
+            smallJia.className="smallJia"
+            li.appendChild(smallJia)
+            $(".smallListQin")[0].appendChild(li)
+        }
+        //弹出购物车
+        $("#shopCarB").on("tap",function () {
+            if(allNumber==0){
+                return
+            }
+            $("#smallListOut").show()
+        });
+
+
+        $("#payShopCar").on("tap",function () {
+            alert(1)
+        });
+
+        $(".smallListDiv").on("tap",function () {
+            $("#smallListOut").hide()
+        });
+        //清空
+        $(".closedSmallList").on("tap",function () {
+            //清空所有数据
+            arrName={}
+            arr1={}
+            allNumber=0
+            arrPrice=0
+            price1={}
+            $(".foodListJian").hide();
+            $(".foodListNum").hide();
+            $(".foodListJia").hide();
+            $(".foodListBigJia").show();
+            $(".allNumber").text(allNumber);
+            $(".allPrice").text(arrPrice);
+           document.getElementById("smallListQin1").innerHTML=""
+        });
+
+//        $(".shopMo").keyup(function () {
+//            console.log(11)
+//            $("table tbody tr")
+//                .hide()
+//                .filter(":contains('"+( $(this).val() )+"')")
+//                .show();
+//        });
+
+
+    })
+</script>
+</html>

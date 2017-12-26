@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>使用优惠券</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+
+</head>
+<body>
+    <div id="disHeader">
+        <span>不使用优惠券</span>
+        <span class="noYouX"></span>
+        <input type="radio" class="noYou">
+    </div>
+    <div id="specnoCardF">
+        <div id="specnoCard">
+            <div class="specnoImg user1">
+                <input type="radio" class="youHui">
+                <span class="youHuiX"></span>
+                <ul class="specnoImgUp   clearfix">
+                    <li>￥</li>
+                    <li>20000</li>
+                    <li>优惠券</li>
+                    <li>首次下单</li>
+                </ul>
+                <ul class="specnoImgUp2 clearfix">
+                    <li>减50元</li>
+                    <li>2017.11.11-2017.11.18</li>
+                </ul>
+                <span>仅限会员首次下单使用</span>
+            </div>
+
+        </div>
+
+
+    <div id="guoQi">
+        <div id="guoImg">
+            <ul class="guoImg1 clearfix">
+                <li>￥</li>
+                <li>200</li>
+                <li>优惠券</li>
+                <li>首次下单</li>
+            </ul>
+            <ul class="guoImg2 clearfix">
+                <li>减50元</li>
+                <li>2017.11.11-2017.11.18</li>
+            </ul>
+            <div>
+                <span></span>
+                <span>不可用原因</span>
+            </div>
+            <span>仅限会员首次下单使用</span>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"> </script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+        $(".noYou").on("tap",function () {
+
+        })
+
+        $(".youHui").on("tap",function () {
+
+        })
+
+    })
+
+
+
+
+</script>
+</html>

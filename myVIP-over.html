@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的MC</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+
+<div id="vipCard">
+    <div id="vipup">
+        <img src="./img/touxian.png" id="viphImg">
+        <span class="vipName">Yoko.Zhong</span>
+        <img src="./img/ewm.png" id="vipUpewm">
+        <div id="vipupList">
+            <ul id="vipupList1" class="clearfix">
+                <li>10000.00</li>
+                <li>0</li>
+                <li>400</li>
+            </ul>
+            <ul id="vipupList2" class="clearfix">
+                <li>余额</li>
+                <li>优惠券</li>
+                <li>积分</li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="vipdown">
+        <ul id="vipdownList1">
+            <li><img src="./img/huiyuan.png"></li>
+            <li>CM CLUB会员卡</li>
+        </ul>
+        <ul id="vipdownList2">
+            <li><a href="javascript:;">点击查看特权</a></li>
+            <li><img src="./img/xuanze.png"></li>
+        </ul>
+    </div>
+    <!--<div id="bigEwei">-->
+        <!--<span id="guanBiE"></span>-->
+    <!--</div>-->
+
+</div>
+<div id="centerMain">
+    <div class="center1">
+        <span>会员中心</span>
+    </div>
+    <ul class="centerList6 clearfix">
+        <li class="centerList61">
+            <a href="javascript:;">
+                <img src="./img/chongzhi.png">
+                <span>会员充值</span>
+            </a>
+        </li>
+        <li class="centerList61">
+            <a href="javascript:;">
+                <img src="./img/zhangdan.png">
+                <span>会员账单</span>
+            </a>
+        </li>
+        <li class="centerList61">
+            <a href="javascript:;">
+                <img src="./img/kaquan.png">
+                <span>我的卡券</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="centerList6 clearfix">
+        <li class="centerList62">
+            <a href="javascript:;">
+                <img src="./img/jifen.png">
+                <span>我的积分</span>
+            </a>
+        </li>
+        <li class="centerList62">
+            <a href="javascript:;">
+                <img src="./img/ziliao.png">
+                <span>会员资料</span>
+            </a>
+        </li>
+        <li class="centerList62">
+            <a href="javascript:;">
+                <img src="./img/yuding.png">
+                <span>我的预定</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="footer">
+    <ul class="footerList clearfix">
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">优惠</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">订单</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="changeCr">
+                <div class="changBg1"></div>
+                <span class="footerspan">我的</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="vipZhe">
+    <img src="./img/indexBig.png" id="vipZheImg">
+</div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+        //footer的逻辑
+        $(".footerList a").on("tap",function () {
+            $("div").removeClass("changBg1")
+            $(this).children("div").toggleClass("changBg1")
+            $("a").removeClass("changeCr")
+            $(this).toggleClass("changeCr")
+
+        })
+
+
+
+        $("#vipUpewm").on("tap",function () {
+            $("#vipZhe").css("display","block")
+        })
+        $("#vipZhe").on("tap",function () {
+            $(this).css("display","none")
+        })
+    })
+
+</script>
+</html>

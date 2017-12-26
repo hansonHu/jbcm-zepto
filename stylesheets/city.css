@@ -1,0 +1,80 @@
+#cityWrap{
+  width: 100%;
+
+}
+
+#cityMain{
+  width: 1200px;
+  margin: 0 auto;
+
+
+}
+#cityMain .hotcity{
+  width: 100%;
+  height: 107px;
+  position: fixed;
+}
+#cityMain .hotcity h3{
+  color: #929292;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#cityMain .hotcity .ht{
+  width: 1200px;
+  height: 80px;
+  background: silver;
+}
+#cityMain .hotcity .ht li{
+  float: left;
+  width: 56px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-left:5px ;
+
+}
+
+#cityMain .quicklycity{
+  margin-top: 10px;
+  width: 1200px;
+  height: 67px;
+  position: fixed;
+  top: 185px;
+}
+#cityMain .quicklycity h3{
+  color: #929292;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#cityMain .quicklycity .qk{
+  width: 100%;
+  height: 40px;
+}
+#cityMain .quicklycity .qk li{
+  width: 36px;
+  height: 24px;
+  float: left;
+  padding: 0 7px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  /*background: #fb474f;*/
+  color: black;
+}
+#cityMain .quicklycity .qk li:hover{
+  cursor: pointer;
+}
+#cityMain .all{
+  width: 100%;
+  position: relative;
+  /*top: 260px;*/
+}
+#cityMain .all {
+  width: 100%;
+
+}
+
+

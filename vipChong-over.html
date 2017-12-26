@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>会员充值</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <style>
+        body,html{
+            height: 100%;
+        }
+        #vipChForm{
+            height: 100%!important;
+        }
+    </style>
+</head>
+<body>
+<form  id="vipChForm"  class="zhiFuSure" action="">
+    <ul>
+        <li>充值金额 <input type="text" placeholder="￥0.00"></li>
+        <div>
+            <span>充值满2000送200</span>
+            <span>充值满1500送50</span>
+            <span>充值满1000送30</span>
+        </div>
+        <li>支付方式</li>
+        <li class="clearfix">
+            <span></span>微信支付
+            <input type="radio" name="zhifu" value="wx" class="vipCx">
+            <div class="vipCw"></div>
+        </li>
+        <li>
+            <span class="xianImg"></span>
+            <span class="xianText">线下支付</span>
+            <span class="xianText2" class="vipCx">支持用户现金支付或POS刷卡支付</span>
+            <input type="radio" name="zhifu" value="xianxia" class="vipCx">
+            <div class="vipCx"></div>
+        </li>
+    </ul>
+
+    <input type="submit" value="确认支付" class="vipChongZf">
+</form>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"> </script>
+<script>
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+
+        $(".vipCx").on("tap",function () {
+
+        })
+
+
+    })
+</script>
+</html>

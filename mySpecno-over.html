@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的卡券</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+<div id="specnoNav">
+    <ul class="clearfix">
+        <li><a href="javascript:;" class="kqUseNo">未使用</a></li>
+        <li><a href="javascript:;" class="kqUse">已使用</a></li>
+        <li><a href="javascript:;" class="kqUsed">已过期</a></li>
+    </ul>
+</div>
+<div id="specnoCard">
+    <div class="specnoImg user1">
+        <ul class="specnoImgUp   clearfix">
+            <li>￥</li>
+            <li>200</li>
+            <li>优惠券</li>
+            <li>首次下单</li>
+        </ul>
+        <ul class="specnoImgUp2 clearfix">
+            <li>减50元</li>
+            <li>2017.11.11-2017.11.18</li>
+            <li><a href="javascript:;">立即使用</a></li>
+        </ul>
+        <span>仅限会员首次下单使用</span>
+
+    </div>
+    <div class="specnoImg user2">
+        <ul class="specnoImgUp   clearfix">
+            <li>￥</li>
+            <li>200</li>
+            <li>优惠券</li>
+            <li>首次下单</li>
+        </ul>
+        <ul class="specnoImgUp2 clearfix">
+            <li>送零食x2</li>
+            <li>2017.11.11-2017.11.18</li>
+            <li><a href="javascript:;">立即使用</a></li>
+        </ul>
+        <span>仅限会员首次下单使用</span>
+
+    </div>
+    <div class="specnoImg user1">
+        <ul class="specnoImgUp   clearfix">
+            <li>￥</li>
+            <li>200</li>
+            <li>优惠券</li>
+            <li>首次下单</li>
+        </ul>
+        <ul class="specnoImgUp2 clearfix">
+            <li>送零食x2</li>
+            <li>2017.11.11-2017.11.18</li>
+            <li><a href="javascript:;">立即使用</a></li>
+        </ul>
+        <span>仅限会员首次下单使用</span>
+
+    </div>
+    <div id="guoQi">
+        <div id="guoImg">
+            <ul class="guoImg1 clearfix">
+                <li>￥</li>
+                <li>200</li>
+                <li>优惠券</li>
+                <li>首次下单</li>
+            </ul>
+            <ul class="guoImg2 clearfix">
+                <li>减50元</li>
+                <li>2017.11.11-2017.11.18</li>
+            </ul>
+            <div>
+                <span></span>
+                <span>不可用原因</span>
+            </div>
+            <span>仅限会员首次下单使用</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+
+//integNavActive
+    $(".kqUseNo").on("tap",function () {
+        $("a").removeClass("integNavActive")
+        $(this).toggleClass("integNavActive")
+        $(".user1").css("display","block")
+        $(".user2").css("display","none")
+        $("#guoQi").css("display","none")
+    })
+        $(".kqUse").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $(".user1").css("display","none")
+            $(".user2").css("display","block")
+            $("#guoQi").css("display","none")
+        })
+        $(".kqUsed").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $(".user1").css("display","none")
+            $(".user2").css("display","none")
+            $("#guoQi").css("display","block")
+        })
+
+
+    })
+</script>
+</html>

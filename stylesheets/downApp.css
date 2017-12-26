@@ -1,0 +1,226 @@
+#header #headMain .headList #ulList li:nth-of-type(3) a{
+  width: 64px;
+  color: red;
+
+}
+#downApp{
+  width: 100%;
+  height: 420px;
+  background: url(../images/xiazaiye-_02.jpg) no-repeat center;
+  margin: 0 auto;
+  position: relative;
+}
+
+#downApp #Qrcode{
+  width: 320px;
+  height: 110px;
+
+  position: absolute;
+  top: 200px;
+  left: 630px;
+}
+#downApp #Qrcode .twoCode{
+  width: 96px;
+  height: 96px;
+  margin: 7px;
+}
+
+#downApp #Qrcode .ios{
+  width: 190px;
+  height: 35px;
+  background: red;
+  border-radius: 5px ;
+}
+#downApp #Qrcode .ios{
+  width: 190px;
+  height: 35px;
+  background: rgb(230,46,54);
+  border-radius: 5px ;
+  position: absolute;
+  left: 130px;
+  top: 15px;
+}
+#downApp #Qrcode .adr{
+  width: 190px;
+  height: 35px;
+  background: rgb(160,200,66);
+  border-radius: 5px ;
+  position: absolute;
+  left: 130px;
+  top: 65px;
+}
+
+#downApp #Qrcode a{
+  display: inline-block;
+  width: 140px;
+  height: 22px;
+  margin: 5px 30px;
+  font-size: 16px;
+}
+#downApp #Qrcode a img{
+vertical-align: middle;
+}
+
+#downList{
+  width: 100%;
+}
+#downList .downList1{
+  width: 242px;
+  height: 31px;
+  margin-top: 60px;
+  margin-left: 41%;
+}
+#downList .downList2{
+  width: 100%;
+  height: 25px;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#downList .downList3{
+  width: 1200px;
+  margin: 0 auto;
+}
+#downList .downList3 li{
+  /*float: left;*/
+  display: inline-block;
+  width: 32%;
+  height: 216px;
+  border:1px silver solid;
+  margin-right: 0.5%;
+  margin-bottom: 1%;
+}
+#downList .downList3 li img{
+  width: 168px;
+  height: 166px;
+  margin-left: 32px;
+  margin-top: 25px;
+}
+
+#downList .downList3 li span:nth-of-type(1){
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  width: 180px;
+  overflow: hidden;
+  color: #1d1515;
+  position: relative;
+  top: -115px;
+  left: 195px;
+}
+
+#downList .downList3 li span:nth-of-type(2){
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  width: 180px;
+  overflow: hidden;
+  color: #1d1515;
+  position: relative;
+  top:-65px;
+  left: 10px;
+
+}
+#downPu{
+  width: 100%;
+  height: 480px;
+  background: #f8f8f8;
+}
+#downPu #downPu1{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#downPu1 .downPu12{
+  width: 295px;
+  height: 65px;
+  color: #3d3838;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+  font-size: 22px;
+}
+#downPu1 .downPu12>img{
+  margin: 20px 0;
+}
+#downPu1>img{
+  float: right;
+  position: absolute;
+  right: 240px;
+  margin-top: 50px;
+}
+#downPu3{
+  width: 100%;
+  height: 480px;
+
+}
+#downPu4{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  position: relative;
+}
+#downPu4>img{
+  margin-top: 50px;
+  margin-left: 180px;
+}
+#downPu5{
+  width: 305px;
+  height: 65px;
+  position: absolute;
+  top: 210px;
+  left: 700px;
+  text-align: center;
+  font-size: 22px;
+  color: #3d3838;
+}
+#downPu5 img{
+  width: 180px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#downPu8{
+  width: 100%;
+  height: 480px;
+  background: #f8f8f8;
+}
+#downPu6{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#downPu6>img{
+  float: right;
+  margin-right: 240px;
+  margin-top: 50px;
+}
+#downPu6 .downPu7{
+  width: 291px;
+  height: 65px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+  font-size: 22px;
+  color: #3d3838;
+}
+#downPu6 .downPu7>img{
+  width: 180px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+

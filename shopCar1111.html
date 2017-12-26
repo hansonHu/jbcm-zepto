@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>商品分类</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body style="overflow:scroll;overflow-y:hidden">
+<div id="shopCarOut">
+    <!--头部-->
+    <div id="shopCarHeard">
+        <a href="javascript:;">
+            <img src="./img/home.png">
+        </a>
+        <a href="javascript:;">
+            <img src="./img/search.png">
+        </a>
+        <input type="text" placeholder="请输入关键字" class="shopMo" id="shopMo1">
+
+        <table>
+            <tbody>
+            <tr>
+                <td>1血腥玛丽(Bloody Mary)</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!--两个列表-->
+    <div id="shopCarList">
+        <!--品类列表-->
+        <ul id="goodList">
+            <li class="goodsA11">
+                <span>全部</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods1">
+                <span>鸡尾酒</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods2">
+                <span>优惠套餐</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods3">
+                <span>威士忌单杯</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods4">
+                <span>威士忌</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods5">
+                <span>生啤</span>
+                <span class="goodFan"></span>
+            </li>
+            <li class="goods6">
+                <span>零食</span>
+                <span class="goodFan"></span>
+            </li>
+        </ul>
+        <div class="foodListOut">
+            <ul id="foodList">
+                <li class="goods11 goods1all" data-id="1">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">1血腥玛丽(Bloody Mary)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">0</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods22 goods1all" data-id="2">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">2忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods33 goods1all" data-id="3">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">3忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods44 goods1all" data-id="4">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">4忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods55 goods1all" data-id="5">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">5忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+                <li class="goods66 goods1all" data-id="6">
+                    <a href="javascript:;" class="touched">
+                        <img src="./img/product04.png">
+                        <span class="foodName">6忧郁美人(Blue Lady)</span>
+                        <div class="foodPrice">
+                            <span>￥</span>
+                            <span class="foodPrice1">65.00</span>
+                        </div>
+                        <span class="sellerNum">已售228</span>
+                    </a>
+                    <span class="foodListBigJia"></span>
+                    <span class="foodListJian"></span>
+                    <span class="foodListNum">12</span>
+                    <span class="foodListJia"></span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--购物车-->
+    <div id="shopCarB">
+        <img src="./img/gouwuche.png">
+        <span class="allNumber">0</span>
+        <span class="dollarFu">￥</span>
+        <span class="allPrice">0.00</span>
+        <button id="payShopCar">结算</button>
+    </div>
+    <!--小列表-->
+    <div id="smallListOut">
+        <div id="smallList">
+            <div class="smallListDiv">
+                <span class="smallTextShop">购物车</span>
+                <a href="javascript:;" class="closedSmallList">
+                    <img src="./img/shanchu.png">
+                    <span class="emptyAll"> 清空</span>
+                </a>
+            </div>
+            <ul class="smallListQin" id="smallListQin1">
+
+                <!--<li>-->
+                <!--<span class="smallFoodName">血腥玛丽(Bloody Mary)</span>-->
+                <!--<span class="smallFoodDollar">￥</span>-->
+                <!--<span class="smallFoodPrice">65.00</span>-->
+                <!--<span class="smallJian"></span>-->
+                <!--<span class="smallNum">2</span>-->
+                <!--<span class="smallJia"></span>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+
+<script>
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    (function () {
+        var styleNode=document.createElement("style");
+        styleNode.innerHTML="html,bory{height:100%;}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+
+//      全局变量---------------------------------------------------------------------------
+        var data={state: true,
+                msg: "OK",
+            code: 200,
+            data: {
+                benefit: {
+                total: 0
+            },
+                products: {
+                1: {
+                    num: 1,
+                    name: "香槟",
+                    subtotal: 100000
+                },
+                    2:{
+                        num: 5,
+                        name: "香1槟",
+                        subtotal: 200000
+                    },
+                    3:{
+                        num: 4,
+                        name: "香2槟",
+                        subtotal: 200000
+                    },
+                    4:{
+                        num: 3,
+                        name: "香3槟",
+                        subtotal: 200000
+                    },
+                    5:{
+                        num: 3,
+                        name: "香4槟",
+                        subtotal: 200000
+                    },
+                    6:{
+                        num: 2,
+                        name: "香5槟",
+                        subtotal: 200000
+                    }
+                },
+                total: 200000,
+                num: 13
+        }
+        }
+
+        //获取goods列表
+        var goodLists=$(".goods1all")
+        var data1=data.data.products
+        var arr1=[]
+//      大加号逻辑
+        $(".foodListBigJia").on("click",function () {
+            //更新good列表
+            $(this).hide()
+            $(this).parent().children(".foodListJian").show()
+            $(this).parent().children(".foodListNum").show()
+            $(this).parent().children(".foodListJia").show()
+            $(this).parent().children(".foodListNum").text(1)
+            //创建小列表
+            $.map(data1,function (item,index) {
+                arr1.push(item)
+            })
+           var index1=parseInt($(this).parent().attr("data-id")-1)
+
+            createLi(arr1[index1].name,arr1[index1].num,arr1[index1].subtotal,index1+1)
+
+            //更新购物车
+            $(".allNumber").text(data.data.num)
+            $(".allPrice").text(data.data.total)
+
+        })
+
+//     加号逻辑
+        $(".foodListJia").on("tap",function () {
+
+        })
+//    减号逻辑
+        $(".foodListJian").on("tap",function () {
+
+        })
+
+//点击购物车逻辑
+        $("#shopCarB").on("tap",function () {
+            console.log(data.data.num)
+            if(data.data.num===0){
+                $("#smallListOut").hide()
+            }else{
+                $("#smallListOut").show()
+            }
+        })
+//购物车减号逻辑
+        $(".smallJian").on("tap",function () {
+
+        })
+//购物车加号
+        $(".foodListJia").on("tap",function () {
+            $.map(data1,function (item,index) {
+                arr1.push(item)
+            })
+
+            $.each(goodLists,function (index,item) {
+                console.log(item)
+            })
+         
+        })
+
+//左侧分类栏的点击逻辑
+        $("#goodList li").on("tap",function () {
+
+            $("#goodList li").css("color","#999")
+            $(".goodFan").css("display","none")
+            $(this).css("color","deeppink")
+            $(this).children(".goodFan").css("display","block")
+            switch ($(this)[0].className){
+                case "goodsA11":
+                    $(".goods1all").show()
+                    break;
+                case "goods1":
+                    $(".goods1all").hide()
+                    $(".goods11").show()
+                    break;
+                case "goods2":
+                    $(".goods1all").hide()
+                    $(".goods22").show()
+                    break;
+                case "goods3":
+                    $(".goods1all").hide()
+                    $(".goods33").show()
+                    break;
+                case "goods4":
+                    $(".goods1all").hide()
+                    $(".goods44").show()
+                    break;
+                case "goods5":
+                    $(".goods1all").hide()
+                    $(".goods55").show()
+                    break;
+                case "goods6":
+                    $(".goods1all").hide()
+                    $(".goods66").show()
+                    break;
+
+            }
+
+
+        });
+//清空
+        $(".closedSmallList").on("tap",function () {
+
+            $(".foodListBigJia").show()
+            $(".foodListJian").hide()
+            $(".foodListNum").hide()
+            $(".foodListJia").hide()
+            $("#smallListOut").hide()
+            $(".allNumber").text(0)
+            $(".allPrice").text(0)
+
+
+        })
+
+//结算
+        $("#payShopCar").on("tap",function () {
+            if(data.data.num==0){
+                return false
+            }
+        })
+
+        //创建购物车列表
+        function createLi(name,num,price,id) {
+            console.log(name,num,price)
+            var li=document.createElement("li")
+            li.setAttribute("data-id",id)
+            li.className=id
+            var smallFoodName=document.createElement("span")
+            smallFoodName.className="smallFoodName"
+            smallFoodName.innerHTML=name
+            li.appendChild(smallFoodName)
+            var smallFoodDollar=document.createElement("span")
+            smallFoodDollar.className="smallFoodDollar"
+            smallFoodDollar.innerHTML="￥"
+            li.appendChild(smallFoodDollar)
+            var smallFoodPrice=document.createElement("span")
+            smallFoodPrice.className="smallFoodPrice"
+            li.appendChild(smallFoodPrice)
+            smallFoodPrice.innerHTML=price
+            var smallJian=document.createElement("span")
+            smallJian.className="smallJian"
+            li.appendChild(smallJian)
+            var smallNum=document.createElement("span")
+            smallNum.className="smallNum"
+            smallNum.innerHTML=num
+            li.appendChild(smallNum)
+            var smallJia=document.createElement("span")
+            smallJia.className="smallJia"
+            li.appendChild(smallJia)
+            $(".smallListQin")[0].appendChild(li)
+        }
+
+    })
+</script>
+</html>

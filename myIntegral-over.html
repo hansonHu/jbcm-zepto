@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的积分</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+    <div id="IntegHeader">
+        <img src="./img/bg01.png" class="IntegHeaderImg">
+        <span>可用积分</span>
+        <span>400</span>
+    </div>
+    <div id="integNav">
+        <ul>
+            <li><a href="javascript:;" class="integNavActive integNavActive1">收入</a></li>
+            <span></span>
+            <li><a href="javascript:;" class="integNavActive2">支出</a></li>
+        </ul>
+    </div>
+    <div id="integList">
+        <ul class="integL">
+         <li>
+            <span>+10</span>
+            <span>下单成功</span><br>
+            <span>2017-11-20 10:12:40</span>
+
+        </li>
+            <li>
+                <span>+10</span>
+                <span>下单成功</span><br>
+                <span>2017-11-20 10:12:40</span>
+            </li>
+            <li>
+                <span>+10</span>
+                <span>下单成功</span><br>
+                <span>2017-11-20 10:12:40</span>
+            </li>
+            <li>
+                <span>+10</span>
+                <span>下单成功</span><br>
+                <span>2017-11-20 10:12:40</span>
+            </li>
+            <li>
+                <span>+10</span>
+                <span>下单成功</span><br>
+                <span>2017-11-20 10:12:40</span>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+
+        $(".integNavActive1").on("tap",function () {
+            $(this).toggleClass("integNavActive")
+            $(".integNavActive2").removeClass("integNavActive")
+            $(".integL").css("display","block")
+
+        })
+        $(".integNavActive2").on("tap",function () {
+            $(".integNavActive1").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $(".integL").css("display","none")
+
+        })
+
+
+    })
+</script>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+
+
+</head>
+<body>
+
+<div id="orderNav">
+    <ul class="clearfix">
+        <li><a href="javascript:;" class="orderAll">全部</a></li>
+        <li><a href="javascript:;" class="orderPeding">待付款</a></li>
+        <li><a href="javascript:;" class="orderReady">已下单</a></li>
+        <li><a href="javascript:;" class="orderSuccess">已完成</a></li>
+    </ul>
+</div>
+<div id="orderMain">
+    <ul class="orderList">
+        <li class="pending">
+            <div class="ol1">
+                <span>食堂</span>
+                <span>桌号:1</span>
+                <span>待付款</span>
+            </div>
+            <div class="ol2">
+                <img src="./img/1.png">&nbsp;
+                <span>血腥玛丽（Bloody Mary)</span>
+                <span>2</span>
+            </div>
+            <div class="ol3">
+                <span>总金额：</span><span>￥130.00</span><span>(共2件菜品)</span>
+            </div>
+            <div class="ol4">
+                <a href="javascript:;">去付款</a>
+            </div>
+
+        </li>
+        <li class="readyOrder">
+            <div class="ol1">
+                <span>食堂</span>
+                <span>桌号:1</span>
+                <span>已下单</span>
+            </div>
+            <div class="ol2">
+                <img src="./img/1.png">&nbsp;
+                <span>血腥玛丽（Bloody Mary)</span>
+                <span>2</span>
+            </div>
+            <div class="ol3">
+                <span>总金额：</span><span>￥130.00</span><span>(共2件菜品)</span>
+            </div>
+            <div class="ol4">
+                <a href="javascript:;">查看详情</a>
+            </div>
+
+        </li>
+        <li class="successOrder">
+            <div class="ol1">
+                <span>食堂</span>
+                <span>桌号:1</span>
+                <span>已完成</span>
+            </div>
+            <div class="ol2">
+                <img src="./img/1.png">&nbsp;
+                <span>血腥玛丽（Bloody Mary)</span>
+                <span>2</span>
+            </div>
+            <div class="ol3">
+                <span>总金额：</span><span>￥130.00</span><span>(共2件菜品)</span>
+            </div>
+            <div class="ol4">
+                <a href="javascript:;">查看详情</a>
+            </div>
+
+        </li>
+    </ul>
+</div>
+
+<div id="footer">
+    <ul class="footerList clearfix">
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">优惠</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="changeCr">
+                <div class="changBg1"></div>
+                <span class="footerspan">订单</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div></div>
+                <span class="footerspan">我的</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+
+        $(function () {
+            $(".footerList a").on("tap",function () {
+                $("div").removeClass("changBg1")
+                $(this).children("div").toggleClass("changBg1")
+                $("a").removeClass("changeCr")
+                $(this).toggleClass("changeCr")
+
+            })
+            $(".orderAll").on("tap",function () {
+                $("a").removeClass("integNavActive")
+                $(this).toggleClass("integNavActive")
+
+                $(this).children("div").toggleClass("changBg1")
+                $(".orderList").children("li").css("display","block")
+            })
+            $(".orderPeding").on("tap",function () {
+                $("a").removeClass("integNavActive")
+                $(this).toggleClass("integNavActive")
+                $(this).children("div").toggleClass("changBg1")
+                $(".orderList").children("li").css("display","none")
+                $(".pending").css("display","block")
+            })
+            $(".orderReady").on("tap",function () {
+                $("a").removeClass("integNavActive")
+                $(this).toggleClass("integNavActive")
+                $(this).children("div").toggleClass("changBg1")
+                $(".orderList").children("li").css("display","none")
+                $(".readyOrder").css("display","block")
+            })
+            $(".orderSuccess").on("tap",function () {
+                $("a").removeClass("integNavActive")
+                $(this).toggleClass("integNavActive")
+                $(this).children("div").toggleClass("changBg1")
+                $(".orderList").children("li").css("display","none")
+                $(".successOrder").css("display","block")
+            })
+    })
+</script>
+</html>

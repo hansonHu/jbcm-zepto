@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+<div id="rankingOuter">
+    <ul id="billNav">
+        <li>
+            <!--.border-2px(left)-->
+            <a href="javascript:;" class="todayP">今日排行</a>
+        </li>
+        <span></span>
+        <li>
+            <a href="javascript:;" class="winner1">获奖记录</a>
+        </li>
+    </ul>
+
+    <div id="rankingOut" class="clearfix">
+        <ul id="rankingImg" class="clearfix">
+            <li>NO.1</li>
+            <li></li>
+            <li><img src="./img/touxian.png"></li>
+            <li><img src="./img/huangguan.png"></li>
+            <li>Lili.H</li>
+            <li></li>
+            <li>26300</li>
+        </ul>
+
+    </div>
+    <div id="rankingA">
+        <ul id="ringkingList">
+            <li>
+                <span>NO.2</span>
+                <img src="./img/touxian.png">
+                <span>Hello</span>
+                <img src="./img/jinbi.png">
+                <span>1800</span>
+            </li>
+            <li>
+                <span>NO.3</span>
+                <img src="./img/touxian.png">
+                <span>World</span>
+                <img src="./img/jinbi.png">
+                <span>1700</span>
+            </li>
+            <li>
+                <span>NO.4</span>
+                <img src="./img/touxian.png">
+                <span>Test</span>
+                <img src="./img/jinbi.png">
+                <span>1000</span>
+            </li>
+            <li>
+                <span>NO.5</span>
+                <img src="./img/touxian.png">
+                <span>Text</span>
+                <img src="./img/jinbi.png">
+                <span>800</span>
+            </li>
+        </ul>
+        <div class="readyG">
+            <span>游戏规则</span>
+            <img src="./img/guanbi.png" id="closedReady">
+            <p>游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则游戏规则</p>
+        </div>
+        <a href="javascript:;" class="readyGame">点击了解游戏规则</a>
+        <a href="javascript:;" class="joinGame">进入今日游戏</a>
+    </div>
+</div>
+
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+//        $("#billNav a").on("tap",function () {
+//            $("a").removeClass("integNavActive")
+//            $(this).toggleClass("integNavActive")
+//        })
+        $(".todayP").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $("#rankingOut").css("display","block")
+            $("#rankingA").css("display","block")
+        })
+        $(".winner1").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $("#rankingOut").css("display","none")
+            $("#rankingA").css("display","none")
+        })
+
+
+    $("#closedReady").on("tap",function () {
+        $(".readyG").css("display","none")
+    })
+
+    $(".readyGame").on("tap",function () {
+        $(".readyG").css("display","block")
+    })
+
+
+    })
+
+
+</script>
+
+</html>

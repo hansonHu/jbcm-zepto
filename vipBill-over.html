@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>会员账单</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+    <ul id="billNav">
+        <li>
+            <!--.border-2px(left)-->
+            <a href="javascript:;" class="recharge1">充值</a>
+        </li>
+        <span></span>
+        <li>
+            <a href="javascript:;" class="payMoney">消费</a>
+        </li>
+    </ul>
+    <div id="integList">
+        <ul class="integL">
+            <li>
+                <span>+￥1000.00</span>
+                <span>充值</span><br>
+                <span>2017-11-20 10:12:40</span>
+
+            </li>
+            <li>
+                <span>+￥1000.00</span>
+                <span>充值</span><br>
+                <span>2017-11-20 10:12:40</span>
+
+            </li>
+            <li>
+                <span>+￥5000.00</span>
+                <span>充值</span><br>
+                <span>2017-11-20 10:12:40</span>
+
+            </li>
+            <li>
+                <span>+￥1000.00</span>
+                <span>充值</span><br>
+                <span>2017-11-20 10:12:40</span>
+
+            </li>
+            <li>
+                <span>+￥1000.00</span>
+                <span>充值</span><br>
+                <span>2017-11-20 10:12:40</span>
+
+            </li>
+
+        </ul>
+    </div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+    $(function () {
+//        $("#billNav a").on("tap",function () {
+//            $("a").removeClass("integNavActive")
+//            $(this).toggleClass("integNavActive")
+//        })
+        $(".recharge1").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $("#integList").css("display","block")
+        })
+        $(".payMoney").on("tap",function () {
+            $("a").removeClass("integNavActive")
+            $(this).toggleClass("integNavActive")
+            $("#integList").css("display","none")
+        })
+
+
+
+
+    })
+
+
+</script>
+</html>

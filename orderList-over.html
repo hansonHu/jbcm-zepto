@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+    <div id="oLup">
+        <span class="oLnum">食堂(桌号：1)</span>
+        <ul class="oLupZd">
+            <li class="oLupList"><span>血腥玛丽(Bloody Mary)</span><span>X2</span><span>￥130.00</span></li>
+            <li class="oLupList"><span>血腥玛丽(Bloody Mary)</span><span>X2</span><span>￥130.00</span></li>
+            <li class="oLupJf"><span>积分抵扣</span><span>-￥40.00</span></li>
+        </ul>
+       <div class="oLupPy clearfix"><span>￥90</span><span>实付</span></div>
+    </div>
+    <div id="oLdown">
+        <span class="oLdown1">订单信息</span>
+        <ul>
+            <li><span>订单号</span><span>0092 8827 6838 930</span></li>
+            <li><span>支付方式</span><span>在线支付</span></li>
+            <li><span>下单时间</span><span>2017-11-22 16:22</span></li>
+        </ul>
+    </div>
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+
+</script>
+</html>

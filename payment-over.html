@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+</head>
+<body>
+    <div id="payHeader">
+        <span>支付</span>
+        <div class="payDiv1">
+            <div class="payDiv2">
+                <span>￥</span><span>130</span>
+            </div>
+
+        </div>
+    </div>
+    <form action="" id="paymentForm" >
+        <ul>
+            <li>支付方式</li>
+            <li class="clearfix">
+                <span></span>微信支付
+                <input type="radio" name="paymentZf" value="pwx" class="payCz">
+                <div class="vipCw"></div>
+            </li>
+            <li>
+                <span class="xianImg"></span>
+                <span class="xianText">线下支付</span>
+                <span class="xianText2" class="vipCx">支持用户现金支付或POS刷卡支付</span>
+                <input type="radio" name="paymentZf" value="pxx" class="payCz">
+                <div class="vipCx"></div>
+            </li>
+            <li class="clearfix">
+                <span></span>钱包支付
+                <input type="radio" name="paymentZf" value="pqb" class="payCz">
+                <div class="vipCq"></div>
+            </li>
+        </ul>
+
+
+        <input type="submit" value="支付￥130.00" class="paymentBtn">
+    </form>
+
+</body>
+<script src="./js/zepto.js"></script>
+<script src="./js/touch.js"></script>
+<script>
+    //清除默认样式
+    document.addEventListener("tap",function (ev) {
+        ev=ev||event;
+        ev.preventDefault();
+    });
+    //适配
+    (function () {
+        var styleNode=document.createElement("style");
+        var width=document.documentElement.clientWidth/16;
+        styleNode.innerHTML="html{font-size:"+width+"px!important}";
+        document.head.appendChild(styleNode)
+    })();
+    $(function () {
+        $(".payCz").on("tap",function () {
+//            if($(this).val()=="pwx"){
+//                $(".vipCx").removeClass("vipCxX")
+//                $(".vipCq").removeClass("vipCxQ")
+//                $(".vipCw").toggleClass("vipCxW")
+//            }else if($(this).val()=="pxx"){
+//                $(".vipCw").removeClass("vipCxW")
+//                $(".vipCq").removeClass("vipCxQ")
+//                $(".vipCx").toggleClass("vipCxX")
+//            }else if($(this).val()=="pqb"){
+//                $(".vipCx").removeClass("vipCxX")
+//                $(".vipCw").removeClass("vipCxW")
+//                $(".vipCq").toggleClass("vipCxQ")
+//            }
+
+
+        })
+
+
+
+
+    })
+</script>
+</html>
